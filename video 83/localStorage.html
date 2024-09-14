@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local storage question</title>
+    <title>Local storage</title>
 </head>
 <body>
     <script>
-        // let a = 
-    </script>
+        function saveNoteToLocalStorage(note){
+
+        }
+        if(localStorage.getItem("name")){
+            a = localStorage.getItem("name")
+            document.write("Welcome " + a)
+        }
+        else{
+            let a = prompt("Enter your name: ")
+            localStorage.setItem("name", a) 
+            document.write("Welcome " + a)
+        }
+        
+    </script>    
 </body>
 </html>
